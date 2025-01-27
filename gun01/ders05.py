@@ -1,0 +1,5 @@
+print("Asena")
+print("Mutlu")
+print(29)
+print(False)
+print(1.60)
