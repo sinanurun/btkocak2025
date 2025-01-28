@@ -3,6 +3,6 @@ a = 2
 if a < 4:
     b = "küçüktür"
 else:
-    b = "büyüktür"
+    b = "bvcbüyüktür"
 
 print(a,b)
