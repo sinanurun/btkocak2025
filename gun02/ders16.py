@@ -10,4 +10,4 @@ for dd in range(2,25,3):
 
 ad = "zeynepbengisu"
 for dd in ad[5:]:
-    print(dd, end="-")
+    print(dd, end=" - ")
