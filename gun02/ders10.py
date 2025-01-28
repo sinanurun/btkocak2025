@@ -6,3 +6,9 @@ else:
     b = "bvcbüyüktür"
 
 print(a,b)
+
+b = "büyüktür" if a > 8 else "küçütür"
+print(b)
+print("büyüktür" if a > 8 else "küçütür")
+
+
