@@ -12,3 +12,5 @@ for dd in treng:
 for key, value in treng.items():
     print(key, "=>", value)
 
+for key, value in zip(treng.keys(), treng.values()):
+    print(key, "==", value)
