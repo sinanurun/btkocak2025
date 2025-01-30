@@ -1,5 +1,6 @@
 def selamla(ad):
     print(f"selamlar {ad}, kursumuza hoşgeldiniz")
-
-a = selamla("idil")
+    return True
+isim = "idil"
+a = selamla(isim)
 print(a, type(a))
