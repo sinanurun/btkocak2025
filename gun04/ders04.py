@@ -1,8 +1,11 @@
-tutulan = 37
+import random
+baslangic = 1
+bitis = 250
+tutulan = random.randint(baslangic,bitis)
 
 tahminSayisi = 10
-taban = 1
-tavan = 100
+taban = baslangic
+tavan = bitis
 while tahminSayisi >= 1:
     metin = f"{taban} - {tavan} aralığında bir tam sayı giriniz"
     tahmin = int(input(metin))
