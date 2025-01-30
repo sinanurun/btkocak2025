@@ -1,4 +1,5 @@
 import math
+# import math as matematik
 
 a = math.factorial(5)
 print(a)
