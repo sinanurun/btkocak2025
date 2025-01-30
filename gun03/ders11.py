@@ -6,13 +6,25 @@ yemekler = {"Çorbalar":{"etli":["işkembe","kelle paça","tavuk suyu"],
                         "dürümler":["ciger","adana"]},
             "icecekler":["çay","kahve"]
         }
-print(yemekler["Çorbalar"]["etli"])
+# print(yemekler["Çorbalar"]["etli"])
 yemekler["Çorbalar"]["etli"].append("Bayram Çorbası")
-print(yemekler["Çorbalar"]["etli"])
+# print(yemekler["Çorbalar"]["etli"])
+yemekler["Çorbalar"]["etli"]={"dana":["ayakpaça"],
+                              "kuzu":["tirit"]}
 serbetli_tatli = ["Baklava"]
 yemekler["tatlilar"]= {"şerbetlitatlilar":serbetli_tatli}
-print(yemekler)
+# print(yemekler)
 yemekler["tatlilar"]["sütlütatlılar"]=["puding"]
-print(yemekler)
+# print(yemekler)
 serbetli_tatli.append("şeker pare")
-print(yemekler)
+# print(yemekler)
+for anakategori in yemekler:
+    print(anakategori)
+    if type(yemekler[anakategori]) is dict:
+        for altkategori in yemekler[anakategori]:
+            print("\t",altkategori)
+            if type(yemekler[anakategori][altkategori]) is dict:
+                for altkategori2 in yemekler[anakategori][altkategori]:
+                    print("\t\t",altkategori2)
+    else:
+        print("\t",yemekler[anakategori])
