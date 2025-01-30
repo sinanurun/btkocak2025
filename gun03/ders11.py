@@ -26,5 +26,9 @@ for anakategori in yemekler:
             if type(yemekler[anakategori][altkategori]) is dict:
                 for altkategori2 in yemekler[anakategori][altkategori]:
                     print("\t\t",altkategori2)
+                    for altkategori3 in yemekler[anakategori][altkategori][altkategori2]:
+                        print("\t\t\t",altkategori3)
+            else:
+                print("\t\t",yemekler[anakategori][altkategori])
     else:
         print("\t",yemekler[anakategori])
