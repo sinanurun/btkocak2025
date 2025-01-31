@@ -7,12 +7,19 @@ class Ogrenci():
         self.ad = ad
         self.soyad = soyad
         self.tcno = tc
-        self.tamad = self.ad + self.soyad
         self.ortalama = None
+        # self.tamAd()
+
+    def tamAd(self):
+        self.tamad = self.ad + self.soyad
+        return self.tamad
+
+    def __str__(self):
+        return self.tamad
 
 ogr1 = Ogrenci("ali","can",123546)
-print(ogr1.bolum)
-print(ogr1.ad)
-print(vars(ogr1))
-print(vars(Ogrenci))
+# ogr1.tamAd()
+# Ogrenci.tamAd(ogr1)
+print(ogr1.tamad)
+print(ogr1)
 
